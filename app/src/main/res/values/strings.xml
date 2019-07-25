@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UIdes</string>
+    <color name="lightgrey">#F8F9F9</color>
+    <color name="lightgreen">#A3E4D7</color>
+    <color name="darkgreen">#76D7C4</color>
+
+    <string-array name="cities">
+        <item>Ibiza</item>
+        <item>Nowhere1</item>
+        <item>Nowhere2</item>
+    </string-array>
+</resources>

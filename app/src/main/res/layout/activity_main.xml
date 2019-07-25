@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="loveme"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="tender"
+                    android:textColor="@color/darkgreen"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="356dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingRight="30dp"
+             >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/nearme" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textSize="30dp"
+
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="23dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/map" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Map"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    app:srcCompat="@drawable/rec" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="57dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="2dp"
+                            app:srcCompat="@drawable/sunblack" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="28"
+                                    android:textSize="26dp" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="o"
+                                    android:textSize="8dp" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="C"
+                                    android:textSize="10dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="Intense sun"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="57dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="2dp"
+                            app:srcCompat="@drawable/nearme" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="11"
+                                    android:textSize="26dp" />
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="KT"
+                                    android:textSize="10dp" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="North-West"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
