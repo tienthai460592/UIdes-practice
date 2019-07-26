@@ -69,7 +69,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal"
                     android:paddingRight="30dp"
-             >
+                    >
 
                     <ImageView
                         android:id="@+id/imageView2"
